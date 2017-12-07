@@ -1,4 +1,4 @@
- // Initial array of gifs
+ // Gif array
       var celeb = ["Dwayne Johnson", "Star Wars", "Mean Girls - Movie", "Patrick Stewart", "Oprah", "Buffy", "Kevin Hart", 
         "Barack Obama", "The Office BBC - David Brent", "Spongebob", "Iron Man", "The Simpsons", "Will Ferrell"];
       
@@ -18,7 +18,7 @@
         .done(function(response) {
           console.log(queryURL);
           console.log(response);
-          //ties back to index row 36
+          //ties back to index row 40
           $("#gifs-appear-here").html("");
           // Looping through each result stopping at 10
           for (var i = 0; i < 10; i++) {
@@ -42,6 +42,7 @@
             }
           responseCopy = response;
           return responseCopy;
+          console.log(response);
           
         });
       }
@@ -60,7 +61,7 @@
           // Buttons for each gif in the array
           
           var x = $("<button class='btn btn-info'>");
-          // Adding a class of gif to our button
+          // Adding a class of gif to button
           x.addClass("gif");
           // Adding a data-attribute
           x.attr("data-name", celeb[i]);
@@ -71,17 +72,18 @@
         }
       }
 
-      // This function handles events where one button is clicked/index.html row 32
+      // function to add a new gif/index.html row 33
       $("#addGif").on("click", function(event) {
         event.preventDefault();
         
         // This line grabs the input from the textbox
         var gif = $("#gif-input").val().trim();
+        /*prevents a non-animated pic from loading*/
         if (gif != "") {
 
 
 
-        // Adding the gif from the textbox to our array
+        // Adding the gif from the textbox to array
         celeb.push(gif);
         console.log(gif)
 
@@ -103,7 +105,7 @@
       };
 
       // Function for displaying the gif info
-      // Using $(document).on instead of $(".gif").on to add event listenersto dynamically generated elements
+      
       $(document).on("click", ".gif", renderGif);
       $(document).on("click", ".item", changeGif);
       // Calling the renderButtons function to display the intial buttons
