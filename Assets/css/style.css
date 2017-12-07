@@ -40,9 +40,35 @@ p {
 	border: #e9f1ff;
 	box-shadow: 0 10px 20px -7px #222222;
 }
+.btn-info:hover {
+	background: #ffbf80;
+}
 
 .btn-toolbar {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-left: 25px;
+}
+
+/*style to 'add a gif textbox'*/
+input#gif-input {
+	border-style: solid;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-width: 2px;
+	background-color: lightgrey;
+	text-align: center;
+	margin-bottom: 5px
+}
+
+form#gif-form {
+	text-align: center;
+	padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/*Add some style to images*/
+img {
+	border-radius: 25px;
+	box-shadow: 0 15px 35px -6px #ffffff;
 }
