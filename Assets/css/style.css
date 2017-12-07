@@ -1,0 +1,48 @@
+/*add new font*/
+@font-face {
+	font-family: "actionis.ttf";
+	src: url("../Font/actionis/actionis.ttf") format('truetype');
+	
+	}
+
+/*style title and adds background image in the page header*/
+h1 {
+	font-family: 'actionis.ttf';
+	font-size: 80px;
+	color: #ff7d00;
+	text-shadow: 2px 3px #222222;	
+}
+
+.page-header {
+	background-image: url(../Images/film-roll.png);
+	margin: 15px 25px 10px 25px;
+	border-bottom: 0 none;
+}
+
+/*jumbotron to hold gifs*/
+.jumbotron {
+	background-color: #ff944d;
+	box-shadow: 0 18px 26px -6px #222222;	
+}
+
+/*fonts for rating*/
+p {
+	font-family: 'actionis.ttf';
+	font-size: 20px;
+	padding-top: 10px;
+	color: #ffffff;
+	text-shadow: 2px 3px #222222;
+}
+
+/*color and style to the gif buttons*/
+.btn-info {
+	background-color: #ff7d00;
+	border: #e9f1ff;
+	box-shadow: 0 10px 20px -7px #222222;
+}
+
+.btn-toolbar {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 25px;
+}

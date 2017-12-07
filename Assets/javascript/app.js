@@ -1,4 +1,4 @@
- // Array
+ // Initial array of gifs
       var celeb = ["Dwayne Johnson", "Star Wars", "Mean Girls - Movie", "Patrick Stewart", "Oprah", "Buffy", "Kevin Hart", 
       	"Barack Obama", "The Office BBC - David Brent", "Spongebob", "Iron Man", "The Simpsons", "Will Ferrell"];
       
@@ -77,7 +77,6 @@
         
         // This line grabs the input from the textbox
         var gif = $("#gif-input").val().trim();
-        //only add a gif and not a still image
         if (gif != "") {
 
 
