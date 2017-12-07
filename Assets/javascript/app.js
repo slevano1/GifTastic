@@ -1,6 +1,6 @@
  // Initial array of gifs
       var celeb = ["Dwayne Johnson", "Star Wars", "Mean Girls - Movie", "Patrick Stewart", "Oprah", "Buffy", "Kevin Hart", 
-      	"Barack Obama", "The Office BBC - David Brent", "Spongebob", "Iron Man", "The Simpsons", "Will Ferrell"];
+        "Barack Obama", "The Office BBC - David Brent", "Spongebob", "Iron Man", "The Simpsons", "Will Ferrell"];
       
       var gifState = false;
       // Function for dumping the JSON content for each button into the div
@@ -18,27 +18,27 @@
         .done(function(response) {
           console.log(queryURL);
           console.log(response);
-        	//ties back to index row 36
+          //ties back to index row 36
           $("#gifs-appear-here").html("");
-        	// Looping through each result stopping at 10
+          // Looping through each result stopping at 10
           for (var i = 0; i < 10; i++) {
 
           //Creating and storing a div tag 
-        	var gifDiv = $("<div class='item'>");
+          var gifDiv = $("<div class='item'>");
           // Creating a paragraph tag with rating
-        	var results = response.data[i].rating;
-        	var p = $('<p>');
+          var results = response.data[i].rating;
+          var p = $('<p>');
           // Creating an image tag
-        	var gifImage = $("<img>");
+          var gifImage = $("<img>");
           // Setting the src attribute of the image to a property pulled off the result item
-        	gifImage.attr("src",response.data[i].images.fixed_height_still.url);        	     
-        	p.text('Rated: ' + results);
+          gifImage.attr("src",response.data[i].images.fixed_height_still.url);               
+          p.text('Rated: ' + results);
 
            // Appending the paragraph and image tag to the gifImage
-        	gifDiv.append(p);
-        	gifDiv.append(gifImage);
+          gifDiv.append(p);
+          gifDiv.append(gifImage);
           // index.html row 36 - inserts gif 
-        	$("#gifs-appear-here").append(gifDiv);
+          $("#gifs-appear-here").append(gifDiv);
             }
           responseCopy = response;
           return responseCopy;
@@ -89,17 +89,17 @@
         renderButtons();
       }
       });
-      	//on-off gifs
+        //on-off gifs
       function changeGif() {
-      	var state = $(this).index();
-      	if (gifState === false) {
-      	$(this).find("img").attr("src",responseCopy.data[state].images.fixed_height.url);
-      	gifState = true;
+        var state = $(this).index();
+        if (gifState === false) {
+        $(this).find("img").attr("src",responseCopy.data[state].images.fixed_height.url);
+        gifState = true;
       } else {
-      	$(this).find("img").attr("src",responseCopy.data[state].images.fixed_height_still.url);
-      	gifState = false;
-      	}
-      	
+        $(this).find("img").attr("src",responseCopy.data[state].images.fixed_height_still.url);
+        gifState = false;
+        }
+        
       };
 
       // Function for displaying the gif info
