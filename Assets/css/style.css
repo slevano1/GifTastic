@@ -10,11 +10,11 @@ h1 {
 	font-family: 'actionis.ttf';
 	font-size: 80px;
 	color: #ff7d00;
-	text-shadow: 2px 3px #222222;	
+	text-shadow: 2px 3px #222222;
 }
 
 .page-header {
-	background-image: url(../Images/film-roll.png);
+	background-image: url(Images/film-roll.png);
 	margin: 15px 25px 10px 45px;
 	border-bottom: 0 none;
 }
