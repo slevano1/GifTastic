@@ -14,7 +14,7 @@ h1 {
 }
 
 .page-header {
-	background-image: url(Images/film-roll.png);
+	background-image: url(../Images/film-roll.png);
 	margin: 15px 25px 10px 45px;
 	border-bottom: 0 none;
 }
