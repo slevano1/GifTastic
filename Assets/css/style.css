@@ -1,86 +1,100 @@
 /*add new font*/
+
 @font-face {
-	font-family: "actionis.ttf";
-	src: url("../Font/actionis/actionis.ttf") format('truetype');
-	
-	}
+    font-family: "actionis.ttf";
+    src: url("../Font/actionis/actionis.ttf") format('truetype');
+}
+
 
 /*style title and adds background image in the page header*/
+
 h1 {
-	font-family: 'actionis.ttf';
-	font-size: 80px;
-	color: #ff7d00;
-	text-shadow: 2px 3px #222222;
+    font-family: 'actionis.ttf';
+    font-size: 80px;
+    color: #ff7d00;
+    text-shadow: 2px 3px #222222;
 }
 
 .page-header {
-	background-image: url(../Images/film-roll.png);
-	margin: 15px 25px 10px 45px;
-	border-bottom: 0 none;
+    background-image: url(../Images/film-roll.png);
+    margin: 15px 25px 10px 45px;
+    border-bottom: 0 none;
 }
+
 
 /*jumbotron to hold gifs*/
+
 .jumbotron {
-	background-color: #ff944d;
-	box-shadow: 0 18px 26px -6px #222222;	
-	background-size: cover;
-	margin: 0 25px 0 45px;
+    background-color: #ff944d;
+    box-shadow: 0 18px 26px -6px #222222;
+    background-size: cover;
+    margin: 0 25px 0 45px;
 }
+
 
 /*fonts for rating*/
+
 p {
-	font-family: 'actionis.ttf';
-	font-size: 20px;
-	padding-top: 10px;
-	color: #ffffff;
-	text-shadow: 2px 3px #222222;
+    font-family: 'actionis.ttf';
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    text-shadow: 2px 3px #222222;
 }
+
 
 /*color and style to the gif buttons*/
+
 .btn {
-	    margin-left: 3px;
-	    margin-bottom:5px;
-}
-
-.btn-info {
-	background-color: #ff7d00;
-	border: #e9f1ff;
-	box-shadow: 0 10px 20px -7px #222222;
-}
-.btn-info:hover {
-	opacity: 0.5;
-    filter: alpha(opacity=30);
-}
-
-
-
-.btn-toolbar {
-	padding-left: 5px;
-	padding-right: 25px;
-	margin-left: 60px;
-}
-
-/*style to 'add a gif textbox'*/
-input#gif-input {
-	border-style: solid;
-	border-top-style: dotted;
-	border-bottom-style: dotted;
-	border-width: 2px;
-	background-color: lightgrey;
-	text-align: center;
-	margin-bottom: 5px
-}
-
-form#gif-form {
-	text-align: center;
-	padding-bottom: 10px;
+    margin-left: 3px;
     margin-bottom: 5px;
 }
 
-/*Add some style to images*/
-img {
-	border-radius: 25px;
-	box-shadow: 0 15px 35px -6px #ffffff;
-	max-width: 100%;
+.btn-info {
+    background-color: #ff7d00;
+    border: #e9f1ff;
+    box-shadow: 0 10px 20px -7px #222222;
+}
 
+.btn-info:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=30);
+}
+
+.btn-toolbar {
+    padding-left: 5px;
+    padding-right: 25px;
+    margin-left: 60px;
+}
+
+
+/*style to 'add a gif textbox'*/
+
+input#gif-input {
+    border-style: solid;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 2px;
+    background-color: lightgrey;
+    text-align: center;
+    margin-bottom: 5px
+}
+
+form#gif-form {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*Add some style to images*/
+
+img {
+    border-radius: 25px;
+    box-shadow: 0 15px 35px -6px #ffffff;
+    max-width: 100%;
+}
+
+#gifs-appear-here {
+    display: grid;
 }
